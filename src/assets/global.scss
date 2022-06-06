@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&family=Quicksand&display=swap');
+@import './variables.scss';
+
+// estilo do scrollbar
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgba(104, 103, 103, 0.31);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    border: 0;
+    outline: none;
+    font-family: 'Mulish', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #F1F4F5;
+}
+
+.vr {
+    width: 1px;
+    height: 20px;
+    background-color: rgb(184, 184, 184);
+}
+
+.container {
+    width: 100%;
+    max-width: $width-container;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px;
+}
+
+
+.pokemon-card-types {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    padding: 0 11px;
+
+    .pokemon-card-type {
+        width: 64px;
+        font-size: 8px;
+        padding: 3px 16px;
+        border-radius: 12px;
+        color: white;
+        text-transform: uppercase;
+        text-align: center;
+        margin-right: 5px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.grass {
+            background-color: #08FEC3;
+        }
+
+        &.poison {
+            background-color: #AF08FE;
+        }
+
+        &.water {
+            background-color: #00A3FF;
+        }
+
+        &.fire {
+            background-color: #FE0808;
+        }
+
+        &.electric {
+            background-color: #FFB800;
+        }
+
+        &.ground {
+            background-color: #85826E;
+        }
+
+        &.fairy {
+            background-color: #FBA1EC;
+        }
+
+        &.normal {
+            background-color: #C4C4C4;
+        }
+
+        &.flying {
+            background-color: #5317FC;
+        }
+
+        &.default {
+            background-color: #0E0E0E;
+        }
+
+        &.bug {
+            background-color: #51ff00;
+        }
+
+        &.fighting {
+            background-color: #6a0058;
+        }
+
+        &.psychic {
+            background-color: #8d00e5;
+        }
+
+        &.rock {
+            background-color: #000000;
+        }
+
+        &.steel {
+            background-color: #8BB4A4;
+        }
+
+        &.ice {
+            background-color: #E6E6F6;
+        }
+
+        &.ghost {
+            background-color: #835A6A;
+        }
+
+        &.dragon {
+            background-color: #8B9CF6;
+        }
+
+        &.dark {
+            background-color: #414152;
+        }
+    }
+}
